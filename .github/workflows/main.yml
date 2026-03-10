@@ -25,6 +25,6 @@ jobs:
            context: .
            push: true
            tags: |
-             ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
-             ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}
+             ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+             ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}
          
