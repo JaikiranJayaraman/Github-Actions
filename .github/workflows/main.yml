@@ -37,4 +37,5 @@ jobs:
             script: |
               docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{secrets.DOCKER_TOKEN }}
               docker pull ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+              docker run -itd -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }} 
               
