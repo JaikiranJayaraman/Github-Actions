@@ -1,0 +1,7 @@
+services:
+  pythonflask:
+    build: .
+    image: newtwo/image:latest
+    container_name: newtwo
+    ports: 
+      - "8000:8000"
