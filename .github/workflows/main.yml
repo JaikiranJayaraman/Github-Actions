@@ -2,8 +2,8 @@ name: sample1
 
 on: workflow_dispatch
 env:
-  IMAGE_NAME: newtwo/image
-  IMAGE_TAG: LATEST
+  IMAGE_NAME: jaikiran333/newtwo
+  IMAGE_TAG: latest
 
   
 jobs:
